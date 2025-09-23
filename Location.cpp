@@ -6,6 +6,10 @@
 #include <cstring>
 #include <cfloat>
 
+// --- local helpers for standalone build (lat/lon in 1e-7 degrees) ---
+bool check_lat(int32_t lat) { return lat >= -900000000L  && lat <=  900000000L;  }
+bool check_lng(int32_t lng) { return lng >= -1800000000L && lng <= 1800000000L; }
+
 // ---- static hook storage ----
 static bool        s_home_set   = false;
 static Location    s_home{};

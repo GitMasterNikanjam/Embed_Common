@@ -16,7 +16,7 @@
  *   AP_Common.cpp - common utility functions (standalone, no AP_HAL)
  */
 
-#include "AP_Common.h"
+#include "Embed_Common.h"
 
 #include <cstdint>
 #include <cstring>   // memcpy
